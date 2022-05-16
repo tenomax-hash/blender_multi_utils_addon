@@ -72,10 +72,14 @@ class Panel_PT_Two(View3DPanel, bpy.types.Panel):
         box = box.split()
         box = box.column(align=True)
         box.prop(obj, "show_wire")
-        box.prop(obj, "show_all_edges")
         box.prop(obj.display, "show_shadows")
         box.prop(obj, "show_in_front")
-        # box.prop(obj.data, "use_auto_smooth")
+        try:          # box.prop(obj.data, "use_auto_smooth")
+            box.prop(obj.data, "use_auto_smooth")
+            box.prop(obj, "show_all_edges")
+
+        except Exception as e:
+            print(e)
 
         box.prop(obj, "display_type")
         box.prop(obj, "color")
