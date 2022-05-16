@@ -74,12 +74,15 @@ class Panel_PT_Two(View3DPanel, bpy.types.Panel):
         box.prop(obj, "show_wire")
         box.prop(obj.display, "show_shadows")
         box.prop(obj, "show_in_front")
-        try:          # box.prop(obj.data, "use_auto_smooth")
+        if hasattr(obj.data, "use_auto_smooth") == True:
             box.prop(obj.data, "use_auto_smooth")
-            box.prop(obj, "show_all_edges")
+        else:
+            print("unavailabe")
 
-        except Exception as e:
-            print(e)
+        if hasattr(obj, "show_all_edges") == True:
+            box.prop(obj, "show_all_edges")
+        else:
+            print("property unavailable")
 
         box.prop(obj, "display_type")
         box.prop(obj, "color")
