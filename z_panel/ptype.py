@@ -6,7 +6,7 @@ class View3DPanel:
     """Base class for Panel Module"""
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
-    bl_category = "New Tool"
+    bl_category = "Utils"
     bl_options = {'DEFAULT_CLOSED'}
 
 
