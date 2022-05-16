@@ -1,1 +1,3 @@
-THis is a Multipurpose addon for my workspeedup!
+This is a multiutility addon for my workflow!
+
+thanks for choosing my addon ...........
