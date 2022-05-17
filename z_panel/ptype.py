@@ -25,7 +25,7 @@ class VIEW_PT_PanelOne(View3DPanel, bpy.types.Panel):
         obj_prop = obj.my_obj_prop
         layout = self.layout
         box = layout.box()
-        box.label(text="Multipupose", icon='OUTLINER_OB_LIGHTPROBE')
+        box.label(text="Multipurpose", icon='OUTLINER_OB_LIGHTPROBE')
         box = box.column(align=True)
         box.prop(obj_prop, "boo_obj", icon='MOD_PARTICLE_INSTANCE')
         # box.prop(obj, "name", icon='CUBE', text="Act_obj")
