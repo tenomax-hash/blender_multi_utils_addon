@@ -17,7 +17,7 @@ class OBJECT_OT_Button_ok(bpy.types.Operator):
         return (context.object is not None)
 
     def execute(self, context):
-        print('execution complted!')
+        print('execution completed!')
         return {'FINISHED'}
 
     def draw(self, context):
