@@ -9,3 +9,7 @@ key features:-
 2.Batch select object through Panel
 3.invoke transform object location and scale Press F5
 4.some other object properties drawn included for speed flow
+
+How to install
+---------------
+clone files to your blender  addon directory then select user addon and install it!...............
